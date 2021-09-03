@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+ .theme1{
+    --body-bg:hsl(222, 26%, 31%);
+    --container--bg:hsl(222, 26%, 31%);
+    --top-bg:hsl(222, 26%, 31%);
+    --top-clr :hsl(0, 0, 100%);
+    --themeindicator--bg:hsl(222, 26%, 31%);
+    --themeindicator-clr:hsl(0, 0, 100%);
+    --radio-bg:hsl(223, 31%, 20%);
+    --radio1-clr: hsl(6, 63%, 50%);
+    --display-bg:hsl(224, 36%, 15%);
+    --display-clr:white;
+    --numpad-bg:hsl(223, 31%, 20%);
+    --keys--bg:hsl(30, 25%, 89%);
+    --keys--clr:hsl(221, 14%, 31%);
+    --key-bg-shadow: hsl(28, 16%, 65%);
+    --del-reset--bg:hsl(225, 21%, 49%);
+    --text-reset-del-color: hsl(0, 0%, 100%);
+    --key-del-reset-shadow: hsl(224, 28%, 35%);
+    --equlbt-bg:hsl(6, 63%, 50%);
+    --text-equals-color: hsl(0, 0%, 100%);
+    --equals-shadow: hsl(6, 70%, 34%);
+    --text-cl: hsl(0, 0%, 100%);
+ }
+ .theme2{
+    --body-bg: hsl(0, 0%, 90%);
+    --container--bg:hsl(0, 0%, 90%);
+    --top-bg:hsl(0, 0%, 90%);
+    --top-clr :hsl(60, 10%, 19%);
+    --themeindicator--bg :hsl(0, 0%, 90%);
+    --themeindicator-clr:hsl(60, 10%, 19%);
+    --radio-bg:hsl(0, 5%, 81%);
+    --radio2-clr:  hsl(25, 98%, 40%);
+    --display-bg: hsl(0, 0%, 93%);
+    --display-clr:hsl(60, 10%, 19%);
+    --numpad-bg:hsl(0, 5%, 81%);
+    --keys--bg: hsl(45, 7%, 89%);
+    --keys--clr:hsl(60, 10%, 19%);
+    --key-bg-shadow: hsl(35, 11%, 61%);
+    --del-reset--bg:hsl(185, 42%, 37%);
+    --text-reset-del-color: hsl(0, 0, 100%);
+    --key-del-reset-shadow: hsl(185, 58%, 25%);
+    --equlbt-bg: hsl(25, 98%, 40%);
+    --text-equals-color: hsl(0, 0%, 100%);
+    --equals-shadow: hsl(25, 99%, 27%);
+    --text-cl:hsl(60, 10%, 19%);
+ }
+ .theme3{
+    --body-bg:hsl(268, 75%, 9%);
+    --container--bg:hsl(268, 75%, 9%);
+    --top-bg:hsl(268, 75%, 9%);
+    --top-clr : hsl(52, 100%, 62%);
+    --themeindicator--bg:hsl(268, 75%, 9%);
+    --themeindicator-clr:hsl(52, 100%, 62%);
+    --radio-bg: hsl(268, 71%, 12%);
+    --radio3-clr: hsl(176, 100%, 44%);
+    --display-bg: hsl(268, 71%, 12%);
+    --display-clr:hsl(52, 100%, 62%);
+    --numpad-bg: hsl(268, 71%, 12%);
+    --keys--bg:hsl(268, 47%, 21%);
+    --keys--clr:hsl(52, 100%, 62%);
+    --key-bg-shadow:  hsl(290, 70%, 36%);
+    --del-reset--bg: hsl(281, 89%, 26%);
+    --text-reset-del-color: hsl(0, 0%, 100%);
+    --key-del-reset-shadow: hsl(285, 91%, 52%);
+    --equlbt-bg:hsl(176, 100%, 44%);
+    --text-equals-color: hsl(198, 20%, 13%);
+    --equals-shadow:  hsl(177, 92%, 70%);
+    --text-cl: hsl(52, 100%, 62%);
+ }
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Spartan";
+  background-color: var(--body-bg);
+}
+.container {
+  display: grid;
+  /* border: 2px solid black; */
+  height: 80vh;
+  margin: 3%;
+  padding: 8px 6px;
+  margin-top: 12%;
+  background-color: var(--container--bg);
+}
+.top {
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 8px;
+  font-family: "Spartan";
+  background-color: var(--top-bg);
+  color: var(--top-clr);
+  font-weight: 700;
+}
+.text{
+    color: var(--text-cl);
+    font-weight: 700;
+}
+.theme-indicator {
+  display: flex;
+  position: relative;
+  font-family: "Spartan";
+  right: 2%;
+  padding: 8px 4px;
+  background-color: var(--themeindicator--bg);
+  color: var(--themeindicator-clr);
+}
+.radios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4%;
+  /* border: 2px solid black; */
+  padding: 8px 10px;
+  border-radius: 25px;
+  height: 2vh;
+  position: relative;
+  margin-top: 15%;
+  width: 40%;
+  background-color: var(--radio-bg);
+}
+
+ .radios :nth-child(1) {
+  background-color: var(--radio1-clr);
+  cursor: pointer;
+  border-radius: 100px;
+  border: none;
+  margin: 2%;
+
+}
+.radios input:nth-child(2) {
+  background-color: var(--radio2-clr);
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+
+}
+.radios input:nth-child(3) {
+  background-color: var(--radio3-clr);
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+
+}
+label{
+  color: var(--display-clr);
+  position: relative;
+  right: 45%;
+  margin: 2%;
+  transform: translateY(-5px);
+  /* border: 2px solid white; */
+  height: 3vh;
+  top: 2%;
+ 
+}
+
+
+.display {
+  display: flex;
+  /* border: 2px solid black; */
+  height: 12vh;
+  margin: 3%;
+  border-radius: 10px;
+  background-color: var(--display-bg);
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Spartan";
+  font-weight: 700;
+}
+#result{
+  font-family: "Spartan";
+  font-weight: 700;
+  color: var(--display-clr);
+  font-size: 32px;
+  margin: 2%;
+}
+.numpad {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 3%;
+  margin: 3%;
+  margin-bottom: 2%;
+  padding: 15px 15px;
+  
+  height: 50vh;
+  /* border: 2px solid black; */
+  border-radius: 8px;
+  background-color: var(--numpad-bg);
+}
+.keys {
+  background-color: var(--keys--bg);
+  color: var(--keys--clr);
+  font-size: 30px;
+  border-bottom: 3px solid var(--key-bg-shadow);
+  font-family: "Spartan";
+  font-weight: 700;
+  align-items: center;
+}
+#btn {
+  background-color: var(--del-reset--bg);
+  color: var(--text-reset-del-color);
+  font-size: 20px;
+  border-bottom: 3px solid var(--key-del-reset-shadow);
+  font-family: "Spartan";
+  font-weight: 700;
+}
+#btn2 {
+  background-color: var(--equlbt-bg);
+  color: var( --text-equals-color);
+  font-size: 30px;
+  border-bottom: 3px solid var(--equals-shadow);
+  font-family: "Spartan";
+  font-weight: 700;
+}
+button {
+  height: 8vh;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+button:nth-child(17) {
+  grid-column: 1 / span 2;
+}
+button:nth-child(18) {
+  grid-column: 3 / span 2;
+}
+@media only screen and (min-width: 800px) {
+  .container {
+    display: grid;
+    width: 30%;
+    height: 90vh;
+    position: absolute;
+    top: 50%;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

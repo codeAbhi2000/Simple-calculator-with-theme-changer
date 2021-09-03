@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+
+ <script src="script.js"></script>
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="theme1">
+<div class="container">
+  <div class="top">
+    <div class="title">
+      <h2 class="text">calc</h2>
+    </div>
+    <div class="theme-indicator">
+      <h6 class="text">THEME</h6>
+      
+      <div class="radios">      
+        <input type="button" id="blue" onclick="toggletheme(this)" >
+        <input type="button" id="gray"  onclick="toggletheme(this)">
+        <input type="button" id="violet"  onclick="toggletheme(this)">           
+      </div>
+      <label for="blue">1</label>      
+      <label for="gray">2</label>      
+      <label for="violet">3</label> 
+    </div>
+  </div>
+  <div class="display">
+    <p id="result" ></p>
+  </div>
+  <div class="numpad">
+    <button class="keys" value="7" onclick="disply('7')">7</button>
+    <button class="keys" value="8" onclick="disply('8')">8</button>
+    <button class="keys" value="9" onclick="disply('9')">9</button>
+    <button id="btn" onclick="cleare()">DEL</button>
+    <button class="keys" value="4" onclick="disply('4')">4</button>
+    <button class="keys" value="5" onclick="disply('5')">5</button>
+    <button class="keys" value="6" onclick="disply('6')">6</button>
+    <button class="keys"  value="add" onclick="disply('+')">+</button>
+    <button class="keys" value="1" onclick="disply('1')">1</button>
+    <button class="keys" value="2" onclick="disply('2')">2</button>
+    <button class="keys" value="3" onclick="disply('3')">3</button>
+    <button class="keys"  value="minus" onclick="disply('-')">-</button>
+    <button class="keys"  value="dot" onclick="disply('.')">.</button>
+    <button class="keys" value="0" onclick="disply('0')">0</button>
+    <button class="keys"  value="divid" onclick="disply('/')">/</button>
+    <button class="keys"  value="mul" onclick="disply('*')">&times;</button>
+    <button id="btn" onclick="resetdisply()">RESET</button>
+    <button id="btn2" onclick="calculate()" >=</button>
+  </div>
+</div>
+
+  
+ 
+</body>
+</html>
